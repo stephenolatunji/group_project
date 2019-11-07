@@ -8,13 +8,14 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css//bootstrap-4.3.1-dist/css//bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header >
-      <nav>
+      <nav id="navbar">
         <div id="brand-logo">
-          <a href="index.hmtl"><img src="img/logo.png" alt=""/></a>
+          <a href="index.hmtl"><img src="img/logo.png" class="logo" alt=""/></a>
         </div>
 
         <div id="nav-links">
@@ -31,14 +32,7 @@
       </nav>
     </header>
 
-
-
-    
-    <section id="banner">
-      
-        <div class="iframe-wrapper">
-          <iframe height="800" src="https://player.vimeo.com/video/284711143?background=1&quality=1080p" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
+    <section id="banner">    
       <div class="container">
           <p><strong>Nytt bad</strong> pa<sup>o</sup> 10 danger</p>
           <p class="second-para">
@@ -48,9 +42,6 @@
           <a href="index.html">BESTILL GRATIS BEFARING</a>
       </div>
     </section>
-  
-
-
     
     <section id="bannerSection">
       <p>
@@ -64,13 +55,9 @@
       
     </section>
   
-
-
-
-
     <section id="indexSecondSection">
       <div class="container">
-        <div class="row">
+        <div class="row first-row">
           <div class="col-md-4">
             <img src="img/toiletimage.jpg" alt="" />
           </div>
@@ -96,96 +83,95 @@
             <a href="index.html">BESTILL GRATIS BEFARING</a>
           </div>
         </div>
-      </section>
-      <section id="indexThirdSection">
-        <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Trenger du Flislegger?</h1>
-            <form action="">
-              <label for="Navn">Navn</label>
-              <input type="text" class="form-control form-control-lg" />
-              <label for="Navn">Mobil</label>
-              <input type="text" class="form-control form-control-lg" />
-              <label for="Navn">Epost</label>
-              <input type="text" class="form-control form-control-lg" />
-              <label for="Navn">Din melding</label>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="3"
-                class="form-control form-control-lg"
-              ></textarea>
-              <button type="submit">SEND SKJEMA</button>
-              <button>VEDLEGG</button>
-            </form>
-          </div>
-          <div class="col-md-6 checkboxes">
-            <div class="row">
-              <div class="col-md-12">
-                <p>
-                  Valgfritt: Kryss av de punkter henvendelsen gjelder. Vi vil
-                  behandle skjemaet fortløpende, og du får alltid svar innen 1
-                  arbeidsdag.
-                </p>
-              </div>
+        
+          <div class="row second-row">
+            <div class="col-md-6">
+              <h1>Trenger du Flislegger?</h1>
+              <form action="">
+                <label for="Navn">Navn</label>
+                <input type="text" class="form-control form-control-lg" />
+                <label for="Navn">Mobil</label>
+                <input type="text" class="form-control form-control-lg" />
+                <label for="Navn">Epost</label>
+                <input type="text" class="form-control form-control-lg" />
+                <label for="Navn">Din melding</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="3"
+                  class="form-control form-control-lg"
+                ></textarea>
+                <button type="submit">SEND SKJEMA</button>
+                <button type="file" >VEDLEGG</button>
+              </form>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <form>
-                   
+            <div class="col-md-6 checkboxes">
+              <div class="row">
+                <div class="col-md-12">
                   <p>
-                      <input type="checkbox" name="" id="" />
-                      <label for="">Nytt bad på 10 dager</label> <br />
+                    Valgfritt: Kryss av de punkter henvendelsen gjelder. Vi vil
+                    behandle skjemaet fortløpende, og du får alltid svar innen 1
+                    arbeidsdag.
                   </p>
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Vinduer </label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Takvindu</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Dør</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for=""> Gulv</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Vegger</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for=""> Varmekabler</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for=""> Fliser kjøkken</label>
-                </form>
+                </div>
               </div>
-              <div class="col-md-6">
-                <form>
-                  <input type="checkbox" name="" id="" />
-                  <label for=""></label>Fliser gang</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Fliser/Naturstein ute</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for=""> Terrasse</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Tømrertjenester</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Murertjenester</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for="">Elektrikertjenester</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for=""> Rørleggertjenester</label> <br />
-                  <input type="checkbox" name="" id="" />
-                  <label for=""> Annet</label>
-                </form>
+              <div class="row">
+                <div class="col-md-6">
+                  <form>
+                     
+                    <p>
+                        <input type="checkbox" name="" id="" />
+                        <label for="">Nytt bad på 10 dager</label> <br />
+                    </p>
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Vinduer </label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Takvindu</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Dør</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for=""> Gulv</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Vegger</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for=""> Varmekabler</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for=""> Fliser kjøkken</label>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <form>
+                    <input type="checkbox" name="" id="" />
+                    <label for=""></label>Fliser gang</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Fliser/Naturstein ute</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for=""> Terrasse</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Tømrertjenester</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Murertjenester</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for="">Elektrikertjenester</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for=""> Rørleggertjenester</label> <br />
+                    <input type="checkbox" name="" id="" />
+                    <label for=""> Annet</label>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
+          
         </div>
-      </div>
-    </section>
-    <section id="indexFouthSection">
-      <div class="container">
+      </section>
+
+    <section id="indexThirdSection">
+     
       <h1>Hold deg oppdatert!</h1>
-      <h3>Hold deg oppdatert!</h3>
+      <h3><i class="fa fa-facebook-square"></i>Følg oss på Facebook</h3>
       <div>
-        <i>icons</i>
+        <i class="fa fa-edit fa-2x"></i>
         <a href="index.html">PROV DINE IDEER</a>
         <h4>DIGITAL SHOWROOM</h4>
         <h5>
@@ -193,11 +179,10 @@
           prøve ulike fliskombinasjoner i et virtuelt miljø.
         </h5>
       </div>
-    </div>
+    
     </section>
 
-    <section>
-      <div class="container">
+    <section id="indexFourthSection">
       <h1>SAMARBEIDSPARTNERE</h1>
       <div class="row">
         <div class="col-md-4">
@@ -268,7 +253,7 @@
         <div class="col-md-4">
           <div class="row">
             <div class="col-md-12">
-              <img src="" alt="">
+              <img src="img/logo.png" class="logo" alt="">
             </div>
           </div>
           <div class="row">
@@ -277,32 +262,34 @@
             </div>
           </div>
           <div class="row">
-            <i>facebook</i>
+            <div class="col-md-12">
+              <i class="fa fa-facebook-f"></i>
+            </div>
           </div>
         </div>
         <div class="col-md-4">
           <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="">Bergen Elektro Automasjon</a></li>
+            <li><a href="">Hagenes Rør</a></li>
+            <li><a href="">Norfloor Flisesenter Bergen</a></li>
+            <li><a href="">Bergersen Flis</a></li>
+            <li><a href="">Askøy Kjøkkensenter</a></li>
+            <li><a href="">Gulvlegger Vest</a></li>
 
           </ul>
         </div><div class="col-md-4">
           <h4>Kontakt oss</h4>
           <ul>
-            <li><i>icons</i><a href=""></a></li>
-            <li><i>icons</i><a href=""></a></li>
-            <li><i>icons</i><a href=""></a></li>
-            <li><i>icons</i><a href=""></a></li>
+            <li><i class="fa fa-envelope"></i> <a href="">post@fleslandflis.no</a></li>
+            <li><i class="fa fa-phone"></i><a href="">55 99 06 20</a></li>
+            <li><i class="fa fa-map-marker"></i><a href="">Fleslandsvegen 141b, 5258</a></li>
+            <li><a href="">Blomsterdalen, Hordaland</a></li>
 
           </ul>
         </div>
 
       </div>
-    </div>
+    
     </section>
 
     <footer>
