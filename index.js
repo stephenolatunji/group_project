@@ -1,8 +1,15 @@
-window.addEventListener("onscroll", function() {
-  const navbar = document.getElementById("navbar");
-  if (window.pageYOffset >= 50) {
-    navbar.classList.add("stick");
-  } else {
-    navbar.classList.remove("sticky");
-  }
+$(document).ready(function() {
+	let btn = $("#top");
+	$(window).scroll(function() {
+		if ($(window).scrollTop() > 300) {
+			btn.style.display = "block";
+		} else {
+			btn.style.display = "none";
+		}
+	});
+
+	btn.on("click", function(e) {
+		e.preventDefault();
+		$("html, body").animate({ scrollTop: 0 }, "300");
+	});
 });
