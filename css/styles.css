@@ -417,7 +417,7 @@ form label {
 
 #indexFifthSection p {
 	color: #a9a8ad;
-	padding-top: 70px;
+	padding-top: 53px;
 }
 
 #indexFifthSection h4 {
@@ -433,6 +433,16 @@ form label {
 
 .fa-facebook-f {
 	color: #814fa7;
+}
+
+.marker {
+	position: relative;
+	top: -20px;
+}
+
+.envelope {
+	position: relative;
+	left: -10px;
 }
 
 footer {
